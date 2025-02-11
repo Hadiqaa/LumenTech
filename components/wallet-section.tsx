@@ -11,25 +11,25 @@ const wallets = [
   {
     name: "Bitcoin",
     symbol: "BTC/USDT",
-    price: 40322.5,
+    price: 98322.5,
     change: 0.23,
-    chart: "/bitcoin.jpg",
+    chart: "/main-coins/bitcoin.png",
     icon: "/bitcoin-logo.webp",
   },
   {
     name: "Ethereum",
     symbol: "ETH/USDT",
-    price: 2250.75,
+    price: 3350.75,
     change: -0.15,
-    chart: "/ethereum.jpg",
+    chart: "/main-coins/ethereum.png",
     icon: "/ethereum-logo.webp",
   },
   {
     name: "Ripple",
     symbol: "XRP/USDT",
-    price: 0.55,
+    price: 2.47,
     change: 1.2,
-    chart: "/ripple.jpg",
+    chart: "/main-coins/ripple.png",
     icon: "/ripple-logo.png",
   },
 ]
@@ -81,7 +81,7 @@ export function WalletSection() {
                     alt={`${wallet.name} price chart`}
                     width={200}
                     height={100}
-                    className="h-[100px] w-full object-cover"
+                    className="h-[100px] w-full object-contain"
                   />
                 </div>
               </CardContent>
