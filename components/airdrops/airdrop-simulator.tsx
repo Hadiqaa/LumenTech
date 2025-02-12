@@ -91,7 +91,6 @@ export function AirdropSimulator() {
                 </PieChart>
               </ResponsiveContainer>
             </div>
-            <Button className="w-full">Generate AI-Optimized Airdrop</Button>
           </CardContent>
         </Card>
       </motion.div>

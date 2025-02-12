@@ -7,7 +7,7 @@ import { JoinUs } from "@/components/about/join-us"
 
 export default function AboutPage() {
   return (
-    <div className="flex flex-col gap-20 pb-20">
+    <div className="flex flex-col space-y-20 pb-20">
       <AboutHero />
       <Mission />
       <Values />

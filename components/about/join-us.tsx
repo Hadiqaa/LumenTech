@@ -1,9 +1,7 @@
 "use client"
-
 import { motion } from "framer-motion"
-import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { ArrowRight } from "lucide-react"
+
 
 export function JoinUs() {
   return (
@@ -18,10 +16,6 @@ export function JoinUs() {
               We're always looking for talented individuals who are passionate about AI, blockchain, and decentralized
               finance. Join our team and help us build the next generation of Web3 solutions.
             </p>
-            <Button size="lg" variant="secondary">
-              View Open Positions
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
           </CardContent>
         </Card>
       </motion.div>

@@ -39,10 +39,10 @@ export function Values() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
           >
-            <Card>
+            <Card className="h-[224px] overflow-hidden flex flex-col justify-between">
               <CardHeader>
-                <value.icon className="h-10 w-10 text-primary" />
-                <CardTitle>{value.title}</CardTitle>
+                <value.icon className="h-10 w-10 text-primary " />
+                <CardTitle className="text-xl 2xl:text-2xl pt-0.5">{value.title}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">{value.description}</p>

@@ -86,7 +86,6 @@ export function StakingCalculator() {
                 <p className="text-sm text-muted-foreground">Estimated Final Balance:</p>
                 <p className="text-2xl font-bold">{rewardsData[rewardsData.length - 1].amount.toFixed(2)} LUM</p>
               </div>
-              <Button>Start Staking Now</Button>
             </div>
           </CardContent>
         </Card>

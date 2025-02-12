@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 
 export function ContactHeader() {
   return (
-    <section className="bg-background py-20 sm:py-32">
+    <section className="bg-background pt-20 pb-10 ">
       <div className="container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

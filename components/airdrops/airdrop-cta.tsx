@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowRight } from "lucide-react"
+import Link from "next/link"
 
 export function AirdropCTA() {
   return (
@@ -18,10 +19,12 @@ export function AirdropCTA() {
               Join LumenTech today and revolutionize your token distribution strategy. Harness the power of AI to grow
               your community and drive engagement.
             </p>
-            <Button size="lg" variant="secondary">
-              Start Your Airdrop
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            <Link href="/login">
+              <Button size="lg" variant="secondary">
+                Start Your Airdrop
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
           </CardContent>
         </Card>
       </motion.div>

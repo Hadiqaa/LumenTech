@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowRight } from "lucide-react"
+import Link from "next/link"
 
 export function StakingCTA() {
   return (
@@ -18,10 +19,12 @@ export function StakingCTA() {
               Join LumenTech today and experience the future of intelligent staking. Maximize your crypto holdings with
               our cutting-edge AI technology.
             </p>
-            <Button size="lg" variant="secondary">
-              Start Staking Now
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            <Link href="/login" >
+              <Button size="lg" variant="secondary">
+                Start Staking Now
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
           </CardContent>
         </Card>
       </motion.div>

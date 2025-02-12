@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Gift } from "lucide-react"
+import Link from "next/link"
 
 export function AirdropHero() {
   return (
@@ -22,24 +23,23 @@ export function AirdropHero() {
             community growth.
           </p>
           <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center lg:justify-start">
+            <Link href="/login">
             <Button size="lg">
               Launch Airdrop
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
-            <Button size="lg" variant="outline">
-              Explore Features
-            </Button>
+            </Link>
           </div>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="mt-10 lg:mt-0 lg:w-1/2 pl-6 ml-3"
+          className="mt-10 lg:mt-0 lg:w-1/2 "
         >
-          <div className="relative">
+          <div className="relative lg:ml-6">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 opacity-20 blur-3xl"></div>
-            <div className="relative rounded-2xl bg-card p-8 shadow-xl">
+            <div className="relative rounded-2xl bg-card p-8 shadow-xl flex flex-col items-center lg:items-start">
               <Gift className="h-16 w-16 text-primary" />
               <h3 className="mt-6 text-2xl font-bold">Smart Airdrop Distribution</h3>
               <p className="mt-4 text-muted-foreground">

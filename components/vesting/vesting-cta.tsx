@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowRight } from "lucide-react"
+import Link from "next/link"
 
 export function VestingCTA() {
   return (
@@ -18,10 +19,12 @@ export function VestingCTA() {
               Join LumenTech today and experience the power of AI-driven token vesting. Maximize your project's
               potential with our cutting-edge technology.
             </p>
+            <Link href="/login">
             <Button size="lg" variant="secondary">
               Get Started Now
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
+            </Link>
           </CardContent>
         </Card>
       </motion.div>

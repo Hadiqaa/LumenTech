@@ -13,10 +13,10 @@ export function AboutHero() {
           transition={{ duration: 0.5 }}
           className="mx-auto max-w-2xl text-center"
         >
-          <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
+          <h1 className="text-3xl sm:text-4xl font-bold tracking-tight md:text-6xl">
             Revolutionizing Web3 with AI-Powered Solutions
           </h1>
-          <p className="mt-6 text-lg leading-8 text-muted-foreground">
+          <p className="mt-6 text-base sm:text-lg leading-8 text-muted-foreground">
             LumenTech is at the forefront of merging artificial intelligence with blockchain technology, creating
             innovative solutions for token management and decentralized finance.
           </p>

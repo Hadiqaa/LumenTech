@@ -13,15 +13,11 @@ export function DashboardHeader() {
       className="bg-background"
     >
       <div className="container py-8">
-        <div className="flex items-center justify-between">
-          <div>
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-between">
+          <div className="mb-2">
             <h1 className="text-3xl font-bold tracking-tight">Project Dashboard</h1>
             <p className="mt-1 text-muted-foreground">Manage your projects and view AI-driven insights</p>
           </div>
-          <Button>
-            <PlusCircle className="mr-2 h-4 w-4" />
-            New Project
-          </Button>
         </div>
       </div>
     </motion.div>
