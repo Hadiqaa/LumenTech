@@ -56,11 +56,6 @@ export function BlogPosts() {
                   <span>{post.date}</span>
                 </div>
               </CardContent>
-              <CardContent>
-                <Button asChild>
-                  <Link href={`/blog/${post.slug}`}>Read More</Link>
-                </Button>
-              </CardContent>
             </Card>
           </motion.div>
         ))}

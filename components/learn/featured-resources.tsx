@@ -51,14 +51,6 @@ export function FeaturedResources() {
                 <p className="text-sm text-muted-foreground mb-2">{resource.type}</p>
                 <p className="text-muted-foreground mb-4">{resource.description}</p>
               </CardContent>
-              <CardContent>
-                <Button asChild>
-                  <Link href={resource.href}>
-                    Access Resource
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
-              </CardContent>
             </Card>
           </motion.div>
         ))}
