@@ -19,12 +19,12 @@ export function HeroSection() {
   const [isDialogOpen, setIsDialogOpen] = useState(false)
 
   return (
-    <div className="container flex flex-col items-center justify-between gap-8 pt-20 md:flex-row md:gap-12 lg:pt-32">
+    <div className="container flex flex-col items-center justify-between gap-5 pt-20 md:flex-row md:gap-12 lg:pt-32">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="flex flex-col items-center gap-6 text-center md:items-start md:text-left lg:gap-8"
+        className="flex flex-col items-center gap-6 text-center md:items-start md:text-left lg:gap-8 md:w-3/4 lg:w-full"
       >
         <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl md:text-6xl/none lg:text-7xl">
           <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">LumenTech</span>{" "}
@@ -34,7 +34,7 @@ export function HeroSection() {
           Experience the future of crypto trading with our AI-powered automation. LumenTech analyzes markets, executes
           trades, and maximizes your returns 24/7.
         </p>
-        <div className="flex gap-4">
+        <div className="flex flex-col sm:flex-row gap-4">
           <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
             <DialogTrigger asChild>
               <Button size="lg">

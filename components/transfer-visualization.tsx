@@ -13,7 +13,7 @@ const tradingActivities = [
 
 export function TransferVisualization() {
   return (
-    <section className="container mb-20">
+    <section className="hidden lg:block container mb-10">
       <div className="text-center space-y-4">
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -34,7 +34,7 @@ export function TransferVisualization() {
         </motion.h2>
       </div>
 
-      <div className="relative mt-20 h-[600px] w-full">
+      <div className="relative mt-10 h-[600px] w-full">
         {/* World Map Background */}
         <div
           className="absolute inset-0 opacity-10"

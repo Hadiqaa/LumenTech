@@ -10,7 +10,7 @@ import { DashboardImage } from "@/components/dashboard-image"
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-20 pb-20">
+    <div className="flex flex-col space-y-20 pb-20 items-center px-1 md:px-0">
       <HeroSection />
       {/* <DashboardPreview /> */}
       <DashboardImage/>
