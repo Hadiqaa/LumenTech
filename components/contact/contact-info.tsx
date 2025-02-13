@@ -17,16 +17,8 @@ export function ContactInfo() {
         </CardHeader>
         <CardContent className="space-y-4">
           <div className="flex items-center space-x-4">
-            <MapPin className="h-5 w-5 text-primary" />
-            <p>123 Blockchain Avenue, Crypto City, 12345</p>
-          </div>
-          <div className="flex items-center space-x-4">
-            <Phone className="h-5 w-5 text-primary" />
-            <p>+1 (555) 123-4567</p>
-          </div>
-          <div className="flex items-center space-x-4">
             <Mail className="h-5 w-5 text-primary" />
-            <p>support@lumentech.ai</p>
+            <p>info@lumentech.fun</p>
           </div>
         </CardContent>
       </Card>

@@ -7,27 +7,27 @@ import { Users, Coins, TrendingUp, Lock } from "lucide-react"
 const stats = [
   {
     title: "Total Value Locked",
-    value: "$1.2B",
+    value: "$0B",
     icon: Lock,
-    change: "+15%",
+    change: "+0%",
   },
   {
     title: "Active Stakers",
-    value: "125,000+",
+    value: "0+",
     icon: Users,
-    change: "+8%",
+    change: "+0%",
   },
   {
     title: "Average APY",
-    value: "12.5%",
+    value: "0%",
     icon: TrendingUp,
-    change: "+2.3%",
+    change: "+0%",
   },
   {
     title: "Total Rewards Distributed",
-    value: "45M LUM",
+    value: "0LUM",
     icon: Coins,
-    change: "+22%",
+    change: "+0%",
   },
 ]
 

@@ -7,23 +7,23 @@ import { Award, Users, DollarSign, Code } from "lucide-react"
 const achievements = [
   {
     icon: Users,
-    title: "1M+ Users",
-    description: "Trusted by over a million users worldwide",
+    title: "0 Users",
+    description: "",
   },
   {
     icon: DollarSign,
-    title: "$5B+ TVL",
-    description: "Total Value Locked across our platforms",
+    title: "0 TVL",
+    description: "",
   },
   {
     icon: Code,
-    title: "100+ Integrations",
-    description: "Seamlessly integrated with major blockchain networks",
+    title: "0 Integrations",
+    description: "",
   },
   {
     icon: Award,
-    title: "15+ Awards",
-    description: "Recognized for our innovative AI solutions in Web3",
+    title: "0 Awards",
+    description: "",
   },
 ]
 

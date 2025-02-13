@@ -20,7 +20,7 @@ export function ProjectOverview() {
         </CardHeader>
         <CardContent>
           <div className="space-y-6">
-            {projects.map((project, index) => (
+            {/* {projects.map((project, index) => (
               <div key={project.name} className="flex items-center justify-between">
                 <div className="space-y-1">
                   <p className="font-medium">{project.name}</p>
@@ -33,7 +33,10 @@ export function ProjectOverview() {
                   </p>
                 </div>
               </div>
-            ))}
+            ))} */}
+            <div className="font-semibold text-xl">
+              No Project Created
+            </div>
           </div>
         </CardContent>
       </Card>

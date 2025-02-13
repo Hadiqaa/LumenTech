@@ -5,12 +5,12 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts"
 
 const data = [
-  { name: "Jan", tokens: 4000 },
-  { name: "Feb", tokens: 3000 },
-  { name: "Mar", tokens: 2000 },
-  { name: "Apr", tokens: 2780 },
-  { name: "May", tokens: 1890 },
-  { name: "Jun", tokens: 2390 },
+  { name: "Jan", tokens: 0 },
+  { name: "Feb", tokens: 0 },
+  { name: "Mar", tokens: 0 },
+  { name: "Apr", tokens: 0 },
+  { name: "May", tokens: 0 },
+  { name: "Jun", tokens: 0 },
 ]
 
 export function TokenMetrics() {
