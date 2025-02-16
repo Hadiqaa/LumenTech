@@ -12,7 +12,7 @@ const features = [
   },
   {
     title: "Automated Trading",
-    description: "Set your strategy and let LumenTech execute trades automatically, 24/7, without emotional bias.",
+    description: "Set your strategy and let LumenTech execute trades on solana coins automatically, 24/7, without emotional bias.",
     icon: Zap,
   },
   {

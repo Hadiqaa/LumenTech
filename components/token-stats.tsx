@@ -12,7 +12,7 @@ const stats = [
     icon: BarChart3,
   },
   {
-    title: "AI-Executed Trades",
+    title: "AI-Executed Solana coin Trades",
     value: "0M",
     change: "+0%",
     icon: Zap,

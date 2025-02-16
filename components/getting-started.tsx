@@ -90,7 +90,7 @@ export function GettingStarted() {
               </h2>
               <p className="text-muted-foreground">
                 Join now with <span className="font-semibold text-foreground">LumenTech</span> and let our AI handle
-                your trades while you focus on strategy.
+                your solana coin trades while you focus on strategy.
               </p>
               <div className="pt-4">
                 <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
