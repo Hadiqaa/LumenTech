@@ -31,7 +31,7 @@ export function HeroSection() {
           Automated Crypto Trading
         </h1>
         <p className="max-w-[600px] text-muted-foreground sm:text-xl">
-          Experience the future of crypto trading with our AI-powered automation. LumenTech analyzes markets, executes
+          Experience the future of crypto trading with our Solana-based AI-powered automation. LumenTech analyzes markets, executes
           trades, and maximizes your returns 24/7.
         </p>
         <div className="flex flex-col sm:flex-row gap-4">

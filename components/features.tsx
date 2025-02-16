@@ -41,7 +41,7 @@ export function Features() {
   return (
     <section className="container space-y-8">
       <div className="text-center">
-        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">AI-Powered Trading Features</h2>
+        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">AI-Powered Trading Features based on Solana</h2>
         <p className="mx-auto mt-4 max-w-[700px] text-muted-foreground">
           Harness the power of artificial intelligence to revolutionize your crypto trading strategy.
         </p>

@@ -54,7 +54,7 @@ export function GettingStarted() {
           transition={{ duration: 0.5 }}
           className="text-center text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl"
         >
-          Start AI-Powered Trading in Minutes
+          Start Solana based AI-Powered Trading in Minutes
         </motion.h2>
 
         <div className="grid gap-8 md:grid-cols-2">

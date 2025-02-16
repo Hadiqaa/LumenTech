@@ -9,7 +9,7 @@ const activities = [
     project: "LumenToken",
     action: "Token Distribution",
     date: "2023-06-15",
-    description: "Distributed 100,000 LUM tokens to early investors",
+    description: "Distributed 100,000 LUMEN tokens to early investors",
   },
   {
     project: "AstroChain",

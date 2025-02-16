@@ -42,7 +42,7 @@ export function StakingCalculator() {
           </CardHeader>
           <CardContent className="grid gap-6">
             <div className="grid gap-2">
-              <Label htmlFor="staking-amount">Staking Amount (LUM)</Label>
+              <Label htmlFor="staking-amount">Staking Amount (LUMEN)</Label>
               <Input
                 id="staking-amount"
                 type="number"
@@ -74,7 +74,7 @@ export function StakingCalculator() {
                   <XAxis dataKey="month" />
                   <YAxis />
                   <Tooltip
-                    formatter={(value) => [`${value.toFixed(2)} LUM`, "Amount"]}
+                    formatter={(value) => [`${value.toFixed(2)} LUMEN`, "Amount"]}
                     labelFormatter={(label) => `Month ${label}`}
                   />
                   <Line type="monotone" dataKey="amount" stroke="#8884d8" strokeWidth={2} />
@@ -84,7 +84,7 @@ export function StakingCalculator() {
             <div className="flex justify-between items-center">
               <div>
                 <p className="text-sm text-muted-foreground">Estimated Final Balance:</p>
-                <p className="text-2xl font-bold">{rewardsData[rewardsData.length - 1].amount.toFixed(2)} LUM</p>
+                <p className="text-2xl font-bold">{rewardsData[rewardsData.length - 1].amount.toFixed(2)} LUMEN</p>
               </div>
             </div>
           </CardContent>

@@ -16,7 +16,7 @@ export function VestingHero() {
           className="lg:w-1/2"
         >
           <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
-            AI-Powered <span className="text-primary">Token Vesting</span>
+            Solana based AI-Powered <span className="text-primary">Token Vesting</span>
           </h1>
           <p className="mt-6 text-xl text-muted-foreground">
             Optimize your token distribution with LumenTech's intelligent vesting schedules. Maximize stakeholder

@@ -25,7 +25,7 @@ const stats = [
   },
   {
     title: "Total Rewards Distributed",
-    value: "0LUM",
+    value: "0LUMEN",
     icon: Coins,
     change: "+0%",
   },

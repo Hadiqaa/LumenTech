@@ -15,7 +15,7 @@ export function DashboardHeader() {
       <div className="container py-8">
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between">
           <div className="mb-2">
-            <h1 className="text-3xl font-bold tracking-tight">Project Dashboard</h1>
+            <h1 className="text-3xl font-bold tracking-tight">Project Dashboard (Solana based)</h1>
             <p className="mt-1 text-muted-foreground">Manage your projects and view AI-driven insights</p>
           </div>
         </div>
