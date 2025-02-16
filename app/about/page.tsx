@@ -11,7 +11,7 @@ export default function AboutPage() {
       <AboutHero />
       <Mission />
       <Values />
-      <Team />
+      {/* <Team /> */}
       <Achievements />
       <JoinUs />
     </div>
