@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { FaHeart, FaXTwitter, FaDiscord, FaLinkedin, FaSquareGithub, FaMedium } from "react-icons/fa6"
+import Image from "next/image"
 
 const footerLinks = {
   Solutions: [
@@ -32,9 +33,13 @@ export function Footer() {
           {/* Left Section - Logo & Social Links */}
           <div className="w-full">
             <Link href="/" className="flex items-center space-x-2">
-              <div className="relative size-8 overflow-hidden rounded-full bg-gradient-to-tr from-blue-500 to-purple-500">
-                <div className="absolute inset-0 flex items-center justify-center text-lg font-bold text-white">L</div>
-              </div>
+              <Image
+                src="/favicon.png" 
+                alt="Company Logo"
+                width={35} 
+                height={35} 
+                priority 
+              />
               <span className="text-xl font-bold">LumenTech</span>
             </Link>
 

@@ -10,6 +10,9 @@ import type React from "react"
 export const metadata: Metadata = {
   title: "LumenTech - AI-Powered Web3 Token Management",
   description: "Next-generation token management platform with AI-driven insights at lumentech.fun",
+  icons: {
+    icon: "/favicon.png",
+  },
 }
 
 export default function RootLayout({

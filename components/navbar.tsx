@@ -14,6 +14,7 @@ import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/component
 import { cn } from "@/lib/utils"
 import { WalletIcon, Menu, ChevronDown } from "lucide-react"
 import { FaXTwitter } from "react-icons/fa6"
+import Image from "next/image"
 
 export function Navbar() {
   return (
@@ -21,9 +22,13 @@ export function Navbar() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center space-x-2">
-            <div className="relative size-8 overflow-hidden rounded-full bg-gradient-to-tr from-blue-500 to-purple-500">
-              <div className="absolute inset-0 flex items-center justify-center text-lg font-bold text-white">L</div>
-            </div>
+            <Image
+              src="/favicon.png" 
+              alt="Company Logo"
+              width={35} 
+              height={35} 
+              priority 
+            />
             <span className="text-xl font-bold">Lumentech</span>
           </Link>
 
@@ -36,7 +41,7 @@ export function Navbar() {
           <div className="flex lg:hidden">
             <Sheet>
               <SheetTrigger asChild>
-                  <Menu className="h-6 w-6 md:h-7 md:w-7" />  
+                <Menu className="h-6 w-6 md:h-7 md:w-7" />
               </SheetTrigger>
               <SheetContent side="right" className="w-[300px] sm:w-[400px]">
                 <MobileNav />
