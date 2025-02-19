@@ -21,6 +21,14 @@ interface Coin {
 
 const wallets = [
   {
+    name: "Solana",
+    symbol: "SOL/USDT",
+    price: 2.47,
+    change: 1.2,
+    chart: "/main-coins/solana.png",
+    icon: "/main-coins/solana.png",
+  },
+  {
     name: "Bitcoin",
     symbol: "BTC/USDT",
     price: 98322.5,
@@ -35,15 +43,7 @@ const wallets = [
     change: -0.15,
     chart: "/main-coins/ethereum.png",
     icon: "/ethereum-logo.webp",
-  },
-  {
-    name: "Solana",
-    symbol: "SOL/USDT",
-    price: 2.47,
-    change: 1.2,
-    chart: "/main-coins/solana.png",
-    icon: "/main-coins/solana.png",
-  },
+  }
 ]
 
 export function WalletSection() {
@@ -51,7 +51,7 @@ export function WalletSection() {
 
   // API URL for CoinGecko
   const apiUrl =
-    "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=bitcoin,ethereum,solana&order=market_cap_desc&per_page=100&page=1&sparkline=false&price_change_percentage=24h";
+    "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=solana,bitcoin,ethereum&order=market_cap_asc&per_page=100&page=1&sparkline=false&price_change_percentage=24h";
 
   // Fetch market data on component mount
   useEffect(() => {
