@@ -29,6 +29,14 @@ const wallets = [
     icon: "/main-coins/solana.png",
   },
   {
+    name: "Ethereum",
+    symbol: "ETH/USDT",
+    price: 3350.75,
+    change: -0.15,
+    chart: "/main-coins/ethereum.png",
+    icon: "/ethereum-logo.webp",
+  },
+  {
     name: "Bitcoin",
     symbol: "BTC/USDT",
     price: 98322.5,
@@ -36,14 +44,6 @@ const wallets = [
     chart: "/main-coins/bitcoin.png",
     icon: "/bitcoin-logo.webp",
   },
-  {
-    name: "Ethereum",
-    symbol: "ETH/USDT",
-    price: 3350.75,
-    change: -0.15,
-    chart: "/main-coins/ethereum.png",
-    icon: "/ethereum-logo.webp",
-  }
 ]
 
 export function WalletSection() {
