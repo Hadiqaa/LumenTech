@@ -1,11 +1,23 @@
 "use client"
 
+import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { WalletIcon } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
+import axios from "axios"
+
+// Define a TypeScript interface for a coin object
+interface Coin {
+  id: string;
+  name: string;
+  symbol: string;
+  image: string;
+  current_price: number;
+  price_change_percentage_24h: number;
+}
 
 const wallets = [
   {
@@ -25,16 +37,35 @@ const wallets = [
     icon: "/ethereum-logo.webp",
   },
   {
-    name: "Ripple",
-    symbol: "XRP/USDT",
+    name: "Solana",
+    symbol: "SOL/USDT",
     price: 2.47,
     change: 1.2,
-    chart: "/main-coins/ripple.png",
-    icon: "/ripple-logo.png",
+    chart: "/main-coins/solana.png",
+    icon: "/main-coins/solana.png",
   },
 ]
 
 export function WalletSection() {
+  const [coins, setCoins] = useState<Coin[]>([]);
+
+  // API URL for CoinGecko
+  const apiUrl =
+    "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=bitcoin,ethereum,solana&order=market_cap_desc&per_page=100&page=1&sparkline=false&price_change_percentage=24h";
+
+  // Fetch market data on component mount
+  useEffect(() => {
+    console.log("Fetching market data...");
+    axios
+      .get<Coin[]>(apiUrl)
+      .then((response) => {
+        console.log("API response:", response.data);
+        setCoins(response.data);
+      })
+      .catch((error) => {
+        console.error("Error fetching market data:", error);
+      });
+  }, []);
   return (
     <section className="container space-y-8">
       <div className="text-center">
@@ -68,10 +99,10 @@ export function WalletSection() {
                     </div>
                   </div>
                   <div className="text-right">
-                    <p className="text-lg font-semibold">${wallet.price.toLocaleString()}</p>
-                    <p className={wallet.change > 0 ? "text-green-500" : "text-red-500"}>
-                      {wallet.change > 0 ? "+" : ""}
-                      {wallet.change}%
+                    <p className="text-lg font-semibold">${coins[index]?.current_price.toLocaleString()}</p>
+                    <p className={coins[index]?.price_change_percentage_24h > 0 ? "text-green-500" : "text-red-500"}>
+                      {coins[index]?.price_change_percentage_24h > 0 ? "+" : ""}
+                      {coins[index]?.price_change_percentage_24h.toFixed(2)}%
                     </p>
                   </div>
                 </div>
